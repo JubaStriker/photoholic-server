@@ -61,7 +61,7 @@ async function run() {
             res.send(reviews);
         })
 
-        app.get('/reviews', async (req, re) => {
+        app.get('/reviews', async (req, res) => {
             let query = {};
             if (req.query.serviceName) {
                 query = {
